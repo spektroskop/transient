@@ -13,7 +13,7 @@ export const actions = {
 
 const active = set(lensProp("active"))
 
-export default createReducer({ active: false }, [
+export const reducer = createReducer({ active: false }, [
     [ types.Begin, () => active(true) ],
     [ types.End, () => active(false) ],
 ])
